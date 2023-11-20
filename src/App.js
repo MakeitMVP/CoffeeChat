@@ -4,6 +4,7 @@ import "./App.scss";
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import { SignUp } from "./pages/SignUp/SignUp";
+import { EditProfile } from "./pages/EditProfile/EditProfile";
 import ConnectionsPage from "./pages/ConnectionsPage/ConnectionsPage";
 import Chat from "./components/Chat/Chat";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
@@ -104,6 +105,7 @@ function App() {
           />
           <Route path="/connections-next" element={<ConnectionsNext />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/EditProfile" element={<EditProfile/>}/>
           <Route
             path="/chat/:id"
             element={<Chat people={connectionsData} db={db} />}
